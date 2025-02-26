@@ -8,9 +8,9 @@ use App\Http\Controllers\NguoController;
 //     return $request->user();
 // })->middleware('auth:sanctum');
 
-Route::get('nguo', [NguoController::class, 'index']);
-Route::post('nguo', [NguoController::class, 'store']);
-Route::get('nguo/{id}', [NguoController::class, 'show']);
-Route::put('nguo/{id}', [NguoController::class, 'update']);
-Route::delete('nguo/{id}', [NguoController::class, 'destroy']);
+Route::get('nguos', [NguoController::class, 'index']);
+Route::post('nguos', [NguoController::class, 'store']);
+Route::get('nguos/{id}', [NguoController::class, 'show']);
+Route::put('nguos/{id}', [NguoController::class, 'update']);
+Route::delete('nguos/{id}', [NguoController::class, 'destroy']);
 

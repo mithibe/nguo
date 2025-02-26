@@ -15,7 +15,7 @@ const addNguo = async () => {
     }
 
     try{
-        await axios.post("http://127.0.0.1:8000/api/nguo", {
+        await axios.post("http://127.0.0.1:8000/api/nguos", {
             name: name.value,
             category: category.value,
             description: description.value || "Unknown",
