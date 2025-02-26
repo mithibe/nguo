@@ -83,3 +83,15 @@ onMounted(fetchNguo);
     <p v-else>No Clothes found.</p>
   </div>
 </template>
+
+
+<style scoped>
+button{
+    margin-left: 10px;
+    font-size: 18px;
+}
+li{
+    font-size: 20px;
+    font-weight: 700;
+}
+</style>

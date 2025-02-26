@@ -33,3 +33,49 @@ a,
     padding: 0 2rem;
   }
 }
+
+button{
+  height: 50px;
+  padding: 0 50px;
+  margin: 20px 0;
+  background: #ddd;
+  color: #222;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+input{
+  margin: 20px 0;
+  height: 50px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+div{
+  color:#eee
+}
+
+form{
+}
+
+select{
+  height: 50px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
