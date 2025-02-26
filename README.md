@@ -20,14 +20,14 @@ Ensure you have the following installed:
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-username/wardrobe-management.git
-cd wardrobe-management
+git clone https://github.com/mithibe/nguo.git
+cd nguo
 ```
 
 ## Backend (Laravel 11)
 ### 2. Set Up Laravel
 ```sh
-cd backend
+cd nguo
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -57,7 +57,7 @@ By default, the API will be available at `http://127.0.0.1:8000`.
 ## Frontend (Vue 3)
 ### 5. Set Up Vue 3
 ```sh
-cd ../frontend
+cd ../Nguo-frontend
 pnpm install
 ```
 
