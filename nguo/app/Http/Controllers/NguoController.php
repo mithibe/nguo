@@ -54,7 +54,7 @@ class NguoController extends Controller
     public function update(Request $request, $id)
     {
         $nguo = Nguo::findOrFail($id);
-        $nguo->update($request->all());
+        $nguo->update($request->only(['name', 'category', 'description']));
         return response()->json($nguo);
     }
 
@@ -63,7 +63,8 @@ class NguoController extends Controller
      */
     public function destroy($id)
     {
-        Nguo::destroy($id);
+        $nguo = Nguo::findOrFail($id);
+        $nguo->delete();
         return response()->json(['message' => 'Deleted successfully']);
     }
 }
