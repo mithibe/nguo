@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from "vue";
+import {ref, defineEmits} from "vue";
 import axios from "axios";
 
 const name = ref("");
@@ -7,6 +7,8 @@ const category = ref("");
 const description = ref("");
 
 const categories = ["Top", "Bottom", "Shoes", "Accessories"];
+
+const emit = defineEmits(["itemAdded"]);
 
 const addNguo = async () => {
     if (!name.value || !category.value) {
@@ -22,6 +24,11 @@ const addNguo = async () => {
         });
 
         alert("Clothing added successfully!");
+
+        // Emit event to notify parent App.Vue to update list
+        emit("itemAdded");
+
+        // Reset form fields
         name.value="";
         category.value="";
         description.value="";

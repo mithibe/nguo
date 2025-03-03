@@ -1,10 +1,12 @@
 <script setup>
-import { ref, onMounted, computed } from "vue";
+import { ref, onMounted, computed, defineExpose } from "vue";
 import axios from "axios";
 
 const nguo = ref([]);
 const searchQuery = ref(""); // Holds the search input value
 
+
+// Function to fetch clothes
 const fetchNguo = async () => {
     try {
         const response = await axios.get("http://127.0.0.1:8000/api/nguos");
@@ -24,6 +26,9 @@ const filteredNguo = computed(() => {
 });
 
 onMounted(fetchNguo);
+
+//Expose the function so App.vue can call it
+defineExpose({ fetchNguo });
 </script>
 
 <template>
