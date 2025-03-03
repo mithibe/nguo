@@ -73,6 +73,13 @@ input {
 button{
     margin-left: 10px;
     font-size: 18px;
+    height: 30px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 li{
     font-size: 20px;
